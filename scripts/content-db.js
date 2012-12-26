@@ -75,7 +75,6 @@ define(['content/content-types'], function(ContentTypes) {
             tags = {};
             archive.forEach(function(item) {
                 item.tags.forEach(function(tag) {
-                    console.log(tag);
                     if (typeof tags[tag] === 'undefined')
                     {
                         tags[tag] = 1;
@@ -91,7 +90,7 @@ define(['content/content-types'], function(ContentTypes) {
         return tags;
     }
 
-    contentDB.getTagged = function(tag)
+    contentDB.getByTag = function(tag)
     {
         currentView = archive.filter(function(item) {
             return item.tags.some(function(item) {

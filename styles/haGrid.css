@@ -32,3 +32,21 @@
 
 .divine-small { width: 38%; }
 .divine-large { width: 62%; }
+
+/**
+    Expermentation with margins
+**/
+.space-tenth { margin-left: 10%; margin-right: 10%; }
+.space-fifth { margin-left: 20%; margin-right: 20%; }
+.space-left-tenth { margin-left: 10%; }
+.space-right-tenth { margin-right: 10%; }
+
+/**
+    Because I wanted to use HTML5 elements, I need to
+    display them correctly. So I added the ubiquitous
+    HTML5 block defaults.
+**/
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+    display:block;
+}

@@ -1,7 +1,7 @@
 /*
     The base of a post object. 
 */
-define(['dom', 'config'], function(dom, config) {
+define(['lib/dom', 'config'], function(dom, config) {
     var base = {};
 
     base.init =  function(settings)
@@ -89,7 +89,7 @@ define(['dom', 'config'], function(dom, config) {
             date = dom.create('p'),
             description = dom.create('p'),
             link = dom.create('a'),
-            tags = dom.create('ul');
+            tags = this.getTagElem();
 
         item.className = className;
         link.href = this.getURL();
@@ -99,19 +99,6 @@ define(['dom', 'config'], function(dom, config) {
         description.appendChild(dom.text(this.description));
         link.appendChild(dom.text(config.readMoreText));
 
-        this.tags.forEach(function(item) {
-            var tag = dom.create('li'),
-                link = dom.create('a');
-
-            link.dataset.tag = item;
-            link.className = 'tag';
-            link.href = "#";
-            link.appendChild(dom.text(item));
-
-            tag.appendChild(link);
-            tags.appendChild(tag);
-        }, this);
-
         item.appendChild(title);
         item.appendChild(date);
         item.appendChild(description);
@@ -119,6 +106,28 @@ define(['dom', 'config'], function(dom, config) {
         item.appendChild(tags);
 
         return item;
+    }
+
+    base.getTagElem = function()
+    {
+        var tags = dom.create('ul');
+
+        tags.className = 'tags';
+
+        this.tags.forEach(function(item) {
+            var tag = dom.create('li'),
+                link = dom.create('a');
+
+            link.dataset.tag = item;
+            link.className = 'tag';
+            link.href = '#';
+            link.appendChild(dom.text(item));
+
+            tag.appendChild(link);
+            tags.appendChild(tag);
+        });
+
+        return tags;
     }
 
     base.getURL = function()

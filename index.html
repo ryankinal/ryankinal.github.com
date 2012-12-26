@@ -2,18 +2,53 @@
 <html lang="en">
 <head>
     <title>Ryan Kinal</title>
+    <link rel="stylesheet" type="text/css" href="styles/haGrid.css" />
+    <link rel="stylesheet" type="text/css" href="styles/index.css" />
 </head>
 <body>
-    <ul id="nav">
-    </ul>
-    <div id="content">
+    <div class="container">
+        <header class="clearfix">
+            <div class="right nine-tenths">
+                <h1 class="left">Ryan Kinal</h1>
+            </div>
+            <div class="clear">
+                <div class="subtitle">
+                    <ul>
+                        <li>Web Developer</li>
+                        <li>Dancer</li>
+                        <li>Musician</li>
+                        <li>Gamer</li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <div class="content">
+            <div class="right divine-small">
+                <nav class="clear">
+                    <h3>Latest</h3>
+                    <ul id="nav">
+                    </ul>
+                    <h3>Tags</h3>
+                    <ul id="tags">
+                    </ul>
+                    <h3>Projects</h3>
+                    <ul id="projects">
+                    </ul>
+                </nav>
+            </div>
+            <div class="left divine-large">
+                <div id="content"></div>
+            </div>
+        </div>
+        <footer class="clear">
+        </footer>
     </div>
-    <!--script type="text/javascript" data-main="scripts/renderer" src="scripts/require.js"></script>
+    <script type="text/javascript" data-main="scripts/renderer" src="scripts/lib/require.js"></script>
     <script type="text/javascript">
         require.config({
             urlArgs: "bust=3"
         });
-    </script-->
+    </script>
     <script type="text/javascript">
         var _gaq = _gaq || [];
         _gaq.push(['_setAccount', 'UA-36919619-1']);

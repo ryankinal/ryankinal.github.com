@@ -36,6 +36,7 @@ define(['content-db'], function(contentDB) {
         link: 'snowbound-blues-post-mortem.html',
         description: 'Snowbound was a great event. But I wasn\'t feeling all that great.',
         tags: [
+            'article',
             'dance',
             'blues',
             'workshop',
