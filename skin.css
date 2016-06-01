@@ -60,10 +60,6 @@ header .limiter {
 	text-align: center;
 }
 
-.now {
-	margin-top: 30px;
-}
-
 .social li {
 	display: inline;
 }
@@ -84,6 +80,7 @@ header .limiter {
 .media {
 	float: left;
 	width: 70%;
+	padding-right: 25px;
 }
 
 .now {
