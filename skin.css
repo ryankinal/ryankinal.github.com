@@ -24,15 +24,19 @@ h1 {
 	font-size: 80px;
 	letter-spacing: -7px;
 	margin-bottom: -36px;
-}
-
-h2 {
-	border-bottom: solid 2px #77B885;
+	float: left;
+	clear: left;
 }
 
 h2, h3, h4 {
 	font-weight: normal;
-	margin-bottom: 5px;
+	margin: 0 0 5px 0;
+	text-align: left;
+}
+
+h2 {
+	border-bottom: solid 2px #77B885;
+	margin: 0 0 15px 0;
 }
 
 h4 {
@@ -43,15 +47,73 @@ p {
 	margin: 0 0 10px 0;
 }
 
+a {
+	color: #86C28B;
+}
+
+.pull-left {
+	float: left;
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+
+.pull-right {
+	float: right;
+	margin-left: 10px;
+	margin-bottom: 10px;
+}
+
+.more {
+	display: none;
+}
+
+.clearfix {
+	clear: both;
+}
+
 .limiter {
 	width: 90%;
 	margin: 0 auto;
 	max-width: 1455px;
-	overflow: hidden;
+	overflow: hidden;;
+}
+
+.row {
+	margin-top: 25px;
+	clear: both;
 }
 
 header .limiter {
 	overflow: visible;
+}
+
+header nav {
+	font-weight: bold;
+	font-size: 24px;
+	clear: right;
+	position: relative;
+	top: 106px;
+	left: 50px;
+	display: none;
+}
+
+header nav ul {
+	padding: 0;
+	margin: 0;
+}
+
+header nav li {
+	display: inline-block;
+	margin: 0 8px;
+}
+
+header nav a {
+	color: #4A4857;
+	text-decoration: none;
+}
+
+header nav .selected a::before {
+	content: '\00bb';
 }
 
 .social ul {
@@ -74,13 +136,44 @@ header .limiter {
 
 .item {
 	display: inline-block;
-	margin: 0 15px;
+	margin: 0 15px 15px 0;
+}
+
+.latest {
+	width: 70%;
+	padding-right: 30px;
+}
+
+.latest h3
+{
+	font-weight: bold;
+}
+
+.latest article
+{
+	width: 84%;
+	margin: 0 8%;
+}
+
+.latest img {
+	width: 38%;
+}
+
+.latest h3::before {
+	content: '\00bb\00a0';
+}
+
+.stream {
+	text-align: center;
+	display: none;
 }
 
 .media {
-	float: left;
-	width: 70%;
-	padding-right: 25px;
+	text-align: center;
+}
+
+.media h3 {
+	display: none;
 }
 
 .now {
