@@ -24,6 +24,7 @@ h1 {
 	font-size: 80px;
 	letter-spacing: -7px;
 	margin-bottom: -38px;
+	margin-left: -5px;
 	float: left;
 	clear: left;
 }
@@ -165,9 +166,21 @@ header nav .selected a::before {
 	padding-right: 30px;
 }
 
+.latest h2 {
+	margin-top: 30px;
+}
+
+.latest h2:first-child {
+	margin-top: 0;
+}
+
 .latest h3
 {
 	font-weight: bold;
+}
+
+.latest h3::before {
+	content: '\00bb\00a0';
 }
 
 .latest article
@@ -180,13 +193,8 @@ header nav .selected a::before {
 	width: 38%;
 }
 
-.latest h3::before {
-	content: '\00bb\00a0';
-}
-
 .stream {
 	text-align: center;
-	display: none;
 }
 
 .media {

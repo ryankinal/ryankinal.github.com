@@ -69,6 +69,11 @@
 					</section>
 				</div>
 				<section class="latest">
+					<!--div class="stream">
+						<h2>Live Stream</h2>
+						<iframe src="https://player.twitch.tv/?channel=ryankinalmusic" id="stream" frameborder="0" scrolling="no" height="56%" width="90%"></iframe><a href="https://www.twitch.tv/ryankinalmusic?tt_medium=live_embed&tt_content=text_link" style="padding:2px 0px 4px; display:block; width:345px; font-weight:normal; font-size:10px;text-decoration:underline;">Watch live video from ryankinalmusic on www.twitch.tv</a>
+					</div-->
+
 					<h2>6/2/2016 - Ramping Up</h2>
 					<article>
 						<p><img src="images/lake.jpg" class="pull-left">Last weekend, I was sitting on the shore of Lake Erie watching the sunset. I sat there for probably an hour, watching the sun peek in and out of clouds on its way toward the horizon. And I had an epiphany. I needed to get working on music. Seriously.</p>
@@ -129,10 +134,6 @@
 				</div>
 			</div>
 			<div class="row">
-				<section class="stream">
-					<h2>Live Stream</h2>
-					<iframe src="https://player.twitch.tv/?channel=ryankinalmusic" id="stream" frameborder="0" scrolling="no" height="56%" width="90%"></iframe><a href="https://www.twitch.tv/ryankinalmusic?tt_medium=live_embed&tt_content=text_link" style="padding:2px 0px 4px; display:block; width:345px; font-weight:normal; font-size:10px;text-decoration:underline;">Watch live video from ryankinalmusic on www.twitch.tv</a>
-				</section>
 			</div>
 		</div>
 		<footer>
@@ -143,7 +144,10 @@
 		<script type="text/javascript">
 		(function() {
 			var stream = document.getElementById('stream');
-			stream.style.height = ((stream.offsetWidth * 9) / 16) + 'px';
+
+			if (stream) {
+				stream.style.height = ((stream.offsetWidth * 9) / 16) + 'px';
+			}
 
 			document.body.onclick = function(e) {
 				var target = e.target || e.srcElement,
