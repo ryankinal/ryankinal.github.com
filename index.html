@@ -141,31 +141,7 @@
 				<p>Looking for my web development resume? Head over to <a href="http://stackoverflow.com/cv/ryankinal">My StackOverflow CV</a> or <a href="https://www.linkedin.com/in/ryan-kinal-4983b313">LinkedIn</a></p>
 			</div>
 		</footer>
-		<script type="text/javascript">
-		(function() {
-			var stream = document.getElementById('stream');
-
-			if (stream) {
-				stream.style.height = ((stream.offsetWidth * 9) / 16) + 'px';
-			}
-
-			document.body.onclick = function(e) {
-				var target = e.target || e.srcElement,
-					article;
-
-				if (target.rel === 'readmore') {
-					target.parentNode.querySelector('.more').style.display = 'block';
-					target.rel = 'readless';
-					target.innerText = 'Show Less';
-					return false;
-				} else if (target.rel === 'readless') {
-					target.parentNode.querySelector('.more').style.display = 'none';
-					target.rel = 'readmore';
-					target.innerText = 'Read More...';
-					return false;
-				}
-			}
-		})();
-		</script>
+		<script type="text/javascript" src="streamwidth.js"></script>
+		<script type="text/javascript" src="readmore.js"></script>
 	</body>
 </html>
