@@ -137,7 +137,8 @@ header nav .selected a::before {
 	height: 74px;
 	background-color: transparent;
 	background-image: url(images/flatIconSet.jpg);
-	background-repeat: none;
+	background-repeat: no-repeat;
+	border-radius: 7px;
 }
 
 .social .facebook {
