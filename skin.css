@@ -123,15 +123,34 @@ header nav .selected a::before {
 }
 
 .social li {
-	display: inline;
+	display: inline-block;
+	margin: 0 6px;
 }
 
-.social li::after {
-	content: ' |';
+.social a {
+	display: block;
+	text-indent: -9999px;
+	width: 75px;
+	height: 74px;
+	background-color: transparent;
+	background-image: url(images/flatIconSet.jpg);
+	background-repeat: none;
 }
 
-.social li:last-child::after {
-	content: '';
+.social .facebook {
+	background-position: -457px -169px;
+}
+
+.social .instagram {
+	background-position: -269px -169px;
+}
+
+.social .soundcloud {
+	background-position: -647px -75px;
+}
+
+.social .youtube {
+	background-position: -81px -75px;
 }
 
 .item {
@@ -185,11 +204,22 @@ header nav .selected a::before {
 	margin-bottom: 30px;
 }
 
+.shows div {
+	margin-bottom: 20px;
+}
+
 footer {
 	margin-top: 30px;
 	clear: both;
 	border-top: solid 15px #86C28B;
 	box-shadow: 0 -1px 0 #859987;
 	background-color: #6DA67A;
+	color: #4A4857;
+	padding: 10px 0;
+	text-align: center;
+	color: #FFF;
+}
+
+footer a {
 	color: #4A4857;
 }
