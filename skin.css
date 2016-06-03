@@ -14,7 +14,7 @@ header {
 	background-color: #6DA67A;
 	padding: 1px;
 	border-bottom: solid 15px #86C28B;
-	box-shadow: 0 1px 0 #859987;
+	box-shadow: 0 3px 0 #859987;
 }
 
 h1 {
@@ -23,7 +23,7 @@ h1 {
 	text-transform: uppercase;
 	font-size: 80px;
 	letter-spacing: -7px;
-	margin-bottom: -36px;
+	margin-bottom: -38px;
 	float: left;
 	clear: left;
 }
@@ -36,6 +36,7 @@ h2, h3, h4 {
 
 h2 {
 	border-bottom: solid 2px #77B885;
+	box-shadow: 0 1px 0 #859987;
 	margin: 0 0 15px 0;
 }
 
@@ -81,6 +82,7 @@ a {
 .row {
 	margin-top: 25px;
 	clear: both;
+	overflow: hidden;
 }
 
 header .limiter {
@@ -212,7 +214,7 @@ footer {
 	margin-top: 30px;
 	clear: both;
 	border-top: solid 15px #86C28B;
-	box-shadow: 0 -1px 0 #859987;
+	box-shadow: 0 -3px 0 #859987;
 	background-color: #6DA67A;
 	color: #4A4857;
 	padding: 10px 0;
