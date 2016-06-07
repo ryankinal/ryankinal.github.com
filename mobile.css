@@ -11,6 +11,7 @@
 	.latest {
 		width: 100%;
 		text-align: justify;
+		padding-right: 0;
 	}
 
 	.latest img {
