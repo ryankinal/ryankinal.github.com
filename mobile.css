@@ -18,21 +18,19 @@
 		margin: 15px 0;
 	}
 
-	body {
-		font-size: 25px;
-	}
-
-	.latest p {
-		margin: 50px 0;
-	}
-
 	.now section div {
 		width: 84%;
-		margin: 50px 8%;
+		margin: 20px 8%;
+	}
+
+	h1 {
+		font-size: 40px;
+		margin-bottom: -28px;
+		letter-spacing: -3px;
 	}
 
 	iframe {
-		width: 720px;
-		height: 540px;
+		width: 270px;
+		height: 202px;
 	}
 }
