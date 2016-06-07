@@ -47,10 +47,16 @@ h4 {
 
 p {
 	margin: 0 0 10px 0;
+	line-height: 20px;
 }
 
 a {
 	color: #86C28B;
+}
+
+iframe {
+	width: 420px;
+	height: 315px;
 }
 
 .pull-left {
@@ -127,7 +133,7 @@ header nav .selected a::before {
 
 .social li {
 	display: inline-block;
-	margin: 0 6px;
+	margin: 8px 6px;
 }
 
 .social a {
@@ -188,6 +194,7 @@ header nav .selected a::before {
 {
 	width: 84%;
 	margin: 0 8%;
+	overflow: hidden;
 }
 
 .latest img {

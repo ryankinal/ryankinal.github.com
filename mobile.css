@@ -1,0 +1,38 @@
+@media screen and (max-device-width: 500px) {
+	.item {
+		width: 100%;
+	}
+
+	.now {
+		float: none;
+		width: 100%;
+	}
+
+	.latest {
+		width: 100%;
+	}
+
+	.latest img {
+		float: none;
+		width: 100%;
+		margin: 15px 0;
+	}
+
+	body {
+		font-size: 25px;
+	}
+
+	.latest p {
+		margin: 50px 0;
+	}
+
+	.now section div {
+		width: 84%;
+		margin: 50px 8%;
+	}
+
+	iframe {
+		width: 720px;
+		height: 540px;
+	}
+}
