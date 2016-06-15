@@ -177,6 +177,17 @@ header nav .selected a::before {
 	margin-bottom: 10px;
 }
 
+.contact-icon {
+	font-weight: bold;
+	color: #BBB;
+}
+
+.contact-icon-email::before {
+	content: '@';
+	position: relative;
+	top: -2px;
+}
+
 .item {
 	display: inline-block;
 	margin: 0 15px 15px 0;
