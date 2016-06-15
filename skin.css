@@ -50,6 +50,10 @@ p {
 	line-height: 20px;
 }
 
+p:last-child {
+	margin-bottom: 0;
+}
+
 a {
 	color: #86C28B;
 }
@@ -163,8 +167,21 @@ header nav .selected a::before {
 	background-position: -81px -75px;
 }
 
+.info {
+	text-align: center;
+}
+
+.info img {
+	width: 100%;
+	margin-bottom: 10px;
+}
+
 .item {
 	display: inline-block;
+	margin: 0 15px 15px 0;
+}
+
+.info-item {
 	margin: 0 15px 15px 0;
 }
 
@@ -222,8 +239,28 @@ header nav .selected a::before {
 	margin-bottom: 30px;
 }
 
-.shows div {
-	margin-bottom: 20px;
+.show {
+	padding: 15px 20px;
+	overflow: hidden;
+	background-color: #333;
+}
+
+.show:nth-child(2n+1) {
+	background-color: #444;
+}
+
+.show-left {
+	float: left;
+	font-size: 32px;
+	margin-right: 15px;
+}
+
+.show-right {
+	overflow: hidden;
+}
+
+.show-date {
+	color: #BBB;
 }
 
 footer {

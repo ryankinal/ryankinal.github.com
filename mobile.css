@@ -20,9 +20,9 @@
 		margin: 15px 0;
 	}
 
-	.now section div {
+	.now section > div {
 		width: 84%;
-		margin: 20px 8%;
+		margin: 0 8%;
 	}
 
 	h1 {
@@ -34,5 +34,9 @@
 	iframe {
 		width: 270px;
 		height: 202px;
+	}
+
+	h2 {
+		text-align: center;
 	}
 }
