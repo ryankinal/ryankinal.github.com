@@ -58,7 +58,7 @@ a {
 	color: #86C28B;
 }
 
-iframe {
+.media iframe {
 	width: 420px;
 	height: 315px;
 }
@@ -232,6 +232,7 @@ header nav .selected a::before {
 
 .stream {
 	text-align: center;
+	margin-bottom: 30px;
 }
 
 .media {
